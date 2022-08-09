@@ -1,6 +1,8 @@
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
+
+// Quiz Questions
 const myQuestions = [
     {
       question: "What is the correct JavaScript syntax to print “Hello World” in the console?",
@@ -32,13 +34,9 @@ const myQuestions = [
     }
   ];
 
-  myQuestions.forEach( (currentQuestion, questionNumber) => {
-    // the code we want to run for each question goes here
-  });
 
   // we'll want to store the list of answer choices
 const answers = [];
-
 
 function buildQuiz(){
     // variable to store the HTML output
@@ -84,7 +82,6 @@ buildQuiz();
 // on submit, show results
 submitButton.addEventListener('click', showResults);
 
-// Quiz Questions
 
 
 
