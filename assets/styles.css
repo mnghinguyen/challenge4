@@ -7,7 +7,7 @@ body{
     background-color: darkblue;
 }
 h1{
-    font-weight: 300;
+    font-weight: 200;
     margin: 0px;
     padding: 10px;
     font-size: 20px;
@@ -39,7 +39,8 @@ button{
 	margin-bottom: 20px;
 }
 button:hover{
-	background-color: #38a;
+	background-color: lightpink;
+    color: black;
 }
 
 .slide{
