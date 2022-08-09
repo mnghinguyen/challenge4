@@ -36,7 +36,7 @@ const myQuestions = [
 
 // --- FUNCTIONS ---
 
-// Build Quiz
+// 1. Build Quiz
 (function(){
   // Functions
   function buildQuiz(){
@@ -77,16 +77,10 @@ const myQuestions = [
     quizContainer.innerHTML = output.join('');
   }
 
-// SHOW RESULTS
+// 2. SHOW RESULTS
 function showResults(){
-  
-  // gather answer containers from our quiz
   const answerContainers = quizContainer.querySelectorAll('.answers');
-
-  // keep track of user's answers
   let numCorrect = 0;
-
-  // for each question...
   myQuestions.forEach( (currentQuestion, questionNumber) => {
 
     // find selected answer
@@ -114,8 +108,7 @@ function showResults(){
 }
 
 
-// Show SLides 
-
+// 3. Show SLides 
 function showSlide(n) {
   slides[currentSlide].classList.remove('active-slide');
   slides[n].classList.add('active-slide');
@@ -136,7 +129,7 @@ function showSlide(n) {
   }
 }
 
-// Kick things off
+// Start
 buildQuiz();
 
 // Pagination
@@ -148,10 +141,11 @@ let currentSlide = 0;
 // Show the first slide
 showSlide(currentSlide);
 
+// Show next slide
 function showNextSlide() {
   showSlide(currentSlide + 1);
 }
-
+// SHow Previous Slide
 function showPreviousSlide() {
   showSlide(currentSlide - 1);
 }
