@@ -15,8 +15,8 @@ h1{
     color: magenta;
 }
 .question{
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 1em;
+    margin-bottom: 1em;
     }
 .answers {
     margin-bottom: 20px;
@@ -55,6 +55,7 @@ button:hover{
 .active-slide{
     opacity: 1;
     z-index: 2;
+    margin-bottom: 2em;
 }
 .quiz-container{
     position: relative;
